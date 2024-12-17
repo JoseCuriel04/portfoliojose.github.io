@@ -1,0 +1,39 @@
+@use './variables' as var;
+
+//Mixin to media queries
+@mixin respond-to($size) {
+    @if $size == 'small' {
+        @media (max-width: 600px) { @content; }
+    } @else if $size == 'medium' {
+        @media (max-width: 1024px) { @content; }
+    } @else {
+        @media (max-width: 1025px ) { @content; }
+    }
+}
+
+//Mixin to title
+@mixin headers{
+    font-family: var.$font-principal;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+@mixin subtitles{
+    font-family: var.$font-principal;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+@mixin footer {
+    font-family: var.$font-principal;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+@mixin principalText {
+    font-family: var.$font-principal;
+    font-weight: 100;
+    font-size: 1rem;
+}

@@ -1,0 +1,45 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins';
+
+header{
+    color: #fff;
+    padding: 1rem;
+    margin: 0 auto;
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navText{
+    margin-right: 1rem;
+    @include mixins.headers();
+    @include mixins.respond-to('small') {
+        margin-right: 0.5rem;
+        font-size: 1rem;
+      }
+}
+
+.navText:hover{
+    background-color: var.$secondary-color;
+    padding: 5px;
+    border-radius: 1rem;
+}
+
+.navText a{
+    text-decoration: none;
+}
+
+.navText a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
