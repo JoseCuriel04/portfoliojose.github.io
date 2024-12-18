@@ -1,0 +1,10 @@
+.firstSection {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+}
+@media (max-width: 1481px) {
+  .firstSection {
+    display: block;
+  }
+}

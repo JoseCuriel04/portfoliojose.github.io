@@ -1,7 +1,12 @@
 @forward './utils/variables';
 @forward './utils/mixins';
+@forward './sections/firstSection.scss';
 @forward './sections/me.scss';
 @forward './sections/skills.scss';
+@forward './sections/projects.scss';
 @forward './layout/header';
 @forward './layout/body';
 @forward './layout/footer';
+@forward './components/subtitleContainer';
+@forward './components/hr';
+

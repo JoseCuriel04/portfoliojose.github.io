@@ -1,0 +1,64 @@
+@use '../utils/mixins';
+.projects{
+    margin-top: 2rem;
+}
+
+.projects img{
+    width: 45vh;
+    border-radius: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    -webkit-box-shadow: 10px 17px 42px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 17px 42px -3px rgba(0,0,0,0.75);
+    box-shadow: 10px 17px 42px -3px rgba(0,0,0,0.75);
+    @include mixins.respond-to('small'){
+        width: 25vh;
+    }
+}
+
+.projects img:hover{
+    width: 47vh;
+    transform: scale(1.05);
+    
+    @include mixins.respond-to('small'){
+        width: 27vh;
+    }
+}
+
+.myProjs{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    @include mixins.respond-to('medium'){
+        flex-direction: column;
+    }
+}
+
+.cardImg{
+    display: flex;
+    margin-right: 1rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.btnsContainer{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1vh;
+}
+
+.btnsContainer a{
+    text-decoration: none;
+    object-fit: contain;
+    color: #fff;
+}
+
+.btnsContainer .labelWork{
+    width: auto;
+    height: auto;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+@use '../utils/mixins';
+
+.firstSection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    @include mixins.respond-to('card'){
+        display: block;
+    }
+}

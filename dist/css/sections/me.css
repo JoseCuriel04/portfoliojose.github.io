@@ -1,13 +1,15 @@
-.meContent {
-  margin-top: 4rem;
-}
-
-.titleContent {
-  display: block;
-}
-
 .meTitle {
-  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 1024px) {
+  .meTitle {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+.meText .name {
+  font-weight: 600;
 }
 
 .imageContent {
@@ -103,6 +105,7 @@
   font-family: "Poppins", serif;
   font-weight: 100;
   font-size: 1rem;
+  width: 20rem;
 }
 
 .infoContent {

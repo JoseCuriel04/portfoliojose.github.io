@@ -5,7 +5,6 @@ header{
     color: #fff;
     padding: 1rem;
     margin: 0 auto;
-
 }
 
 .nav{
@@ -13,21 +12,37 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.scrolled{
+    background-color: var.$secondary-color;
+    padding: 10px;
+    border-radius: 1rem;
+    position: fixed;
+    transition: background-color 1s ease;
 }
 
 .navText{
     margin-right: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    
     @include mixins.headers();
     @include mixins.respond-to('small') {
         margin-right: 0.5rem;
-        font-size: 1rem;
-      }
+        font-size: 0.9rem;
+      }   
 }
 
 .navText:hover{
-    background-color: var.$secondary-color;
-    padding: 5px;
-    border-radius: 1rem;
+    color: var.$text-color
 }
 
 .navText a{

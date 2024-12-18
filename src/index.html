@@ -6,101 +6,161 @@
     <title>Portafolio Axel</title>
     <link rel="stylesheet" href="../dist/css/main.css">
     <script src="ejercicio1.js"></script>
+    <!--ICON-->
+    <link rel="shortcut icon" href="./images/icob-removebg-preview.ico" type="image/x-icon">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--SCRIPTS-->
+    <script src="./js/scrolled.js"></script>
 </head>
 <body class="btnWork3">
     <header>
-        <navbar class="nav">
+        <navbar class="nav" id="navID">
             <div class="navText"><a href="#me">About Me</a></div>
-            <div class="navText"><a href="#projects">My projects</a></div>
-            <div class="navText"><a href="#skills"></a>Skills</div>
-            <div class="navText"><a href="#contact"></a>Contact</div>
+            <div class="navText"><a href="#projects">Projects</a></div>
+            <div class="navText"><a href="#skills">Skills</a></div>
+            <div class="navText"><a href="#contact">Contact</a></div>
         </navbar>
     </header>
     <main>
-        <div class="meContent"></div>
-        <h1 class="meTitle">Computer Systems Engineer</h1>
-        <div id="me" class="infoContent">
-            <div class="imageContent">
-                <img src="./images/myPic.png" alt="" class="myPic"><br>
-                <div class="labelWork"><a class="btnWork">Available to Work</a></div>
+        <div class="firstSection">
+            <div class="meContent">
+                <h1 class="meTitle">Hello, My name is..</h1>
+                <div id="me" class="infoContent">
+                    <div class="imageContent">
+                        <img src="./images/myPic.png" alt="" class="myPic"><br>
+                        <div class="labelWork"><a class="btnWork">Available to Work</a></div>
+                    </div>
+                    
+                    <div class="meText">
+                        <p>
+                            <span class="name">Axel Enrique García Vázquez</span>, and I am a 20-year-old Computer Systems Engineering student at UPT in Tulancingo de Bravo.
+                        </p>
+                        <p>
+                            I specialize in creating functional and user-friendly web applications, designing scalable backend systems, and managing databases effectively.
+                        </p>
+                    </div>            
+                </div>
+            </div>
+            <hr>
+            <div id="skills" class="skills">
+                <h2 class="meTitle titleContainer">
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z" fill="#fff"></path> <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z" fill="#fff"></path> <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z" fill="#fff"></path> </g></svg>
+                    Skills</h2>
+                    
+                <div class="cardContainer">
+                    <div class="card btnWork2">
+                        <h3>Programming languages</h3>
+                        <div class="imgCard">
+                            <img src="./images/skills/js.webp" alt="">
+                            <img src="./images/skills/ts.webp" alt="">
+                            <img src="./images/skills/python.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Frameworks (Frontend & Backend)</h3>
+                        <div class="imgCard">
+                            <img src="./images/skills/reactJS.webp" alt="">
+                            <img src="./images/skills/angular.webp" alt="">
+                            <img src="./images/skills/nodeJS.webp" alt="">
+                            <img src="./images/skills/nestJS.webp" alt="">
+                            <img src="./images/skills/expressJS.webp" alt="">    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Databases/ORM</h3>
+                        <div class="imgCard">
+                            <img src="./images/skills/mysql.webp" alt="">
+                            <img src="./images/skills/sqlserver.webp" alt="">
+                            <img src="./images/skills/postgresql.webp" alt="">
+                            <img src="./images/skills/prismaorm.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>CSS Frameworks and Preprocessors</h3>
+                        <div class="imgCard">
+                            <img src="./images/skills/tailwind.webp" alt="">
+                            <img src="./images/skills/bootstrap.webp" alt="">
+                            <img src="./images/skills/sass.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="projects">
+            <div class="titleContainer">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 9C2 7.89543 2.89543 7 4 7H20C21.1046 7 22 7.89543 22 9V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V9Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 7V4C16 2.89543 15.1046 2 14 2H10C8.89543 2 8 2.89543 8 4V7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M22 12L12.3922 13.9216C12.1333 13.9733 11.8667 13.9733 11.6078 13.9216L2 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <h2>My projects</h2>
             </div>
             
-            <div class="meText">
-                <p>
-                    My name is Axel Enrique García Vázquez, and I am a 20-year-old Computer Systems Engineering student at UPT in Tulancingo de Bravo.
-                </p>
-                <p>
-                    I am deeply passionate about programming and technology. I enjoy solving problems through code and continuously learning new programming 
-                    languages and tools to enhance my knowledge.
-                </p>
-                <p>
-                    If you would like to learn more about my most important projects and the skills I have developed, please continue exploring this page.
-                </p>
-            </div>            
-        </div>
-        <div id="skills" class="skills">
-            <h2>Skills<hr></h2>
-            <div class="cardContainer">
-                <div class="card btnWork2">
-                    <h3>Programming languages</h3>
-                    <ul>
-                        <li><img src="./images/skills/js.webp" alt=""></li>
-                        <li><img src="./images/skills/ts.webp" alt=""></li>
-                        <li><img src="./images/skills/python2.webp" alt=""></li>
-                    </ul>
+            <div class="sectionProjs">
+                <div class="myProjs">
+                    <div class="cardImg">
+                        <img src="./images/projects/ContApp.webp" alt="">
+                    </div>
+                    <div class="textProject">
+                        <h3>ContApp</h3>
+                        <div>
+                            <p>
+                                ContApp is a web application designed for accounting teachers. It allows them to share posts and educational resources with their students.
+                            </p>
+                            
+                            <p>
+                                Teachers can create quizzes, publish posts, and update their user profiles, including changing their username and password.
+                            </p>
+                            <div class="btnsContainer">
+                            <div class="labelWork">
+                                <a href="#projects" class="btnWork">More Information</a></div>
+                            <div class="labelWork">
+                                <a href="#projects" class="btnWork">Visualization</a>
+                            </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="card">
-                    <h3>Frameworks</h3>
-                    <ul>
-                        <li><img src="./images/skills/reactJS.webp" alt=""></li>
-                        <li><img src="./images/skills/angularJS.webp" alt=""></li>
-                        <li><img src="./images/skills/nodeJS.webp" alt=""></li>
-                        <li><img src="./images/skills/nestJS.webp" alt=""></li>
-                        <li><img src="./images/skills/expressJS.webp" alt=""></li>
-                        <li><img src="./images/skills/django.webp" alt=""></li>    
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Databases/ORM</h3>
-                    <ul>
-                        <li><img src="./images/skills/mysql.webp" alt=""></li>
-                        <li><img src="./images/skills/sqlserver.webp" alt=""></li>
-                        <li><img src="./images/skills/postgre.webp" alt=""></li>
-                        <li><img src="./images/skills/prsimaorm.webp" alt=""></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>CSS Frameworks and Preprocessors</h3>
-                    <ul>
-                        <li><img src="./images/skills/tailwind.webp" alt=""></li>
-                        <li><img src="./images/skills/bootstrap.webp" alt=""></li>
-                        <li><img src="./images/skills/sass.webp" alt=""></li>
-                    </ul>
-                </div>
+                <div class="myProjs">
+                    <div class="cardImg">
+                        <img src="./images/projects/Spoti-Friends.webp" alt="">
+                    </div>
+                    <div class="textProject">
+                        <h3>SpotiFriends</h3>
+                        <div>
+                            <p>
+                                This is a web application that requires you to sign in with your Spotify account.
+                            </p>
+                            
+                            <p>
+                                Once registered, you can create your profile and start connecting with others.
+                            </p>
+                            
+                            <p>
+                                The app matches you with people who share similar music tastes.
+                            </p>
+                            <div class="btnsContainer">
+                                <div class="labelWork">
+                                    <a href="#projects" class="btnWork">More Information</a>
+                                </div>
+                                <div class="labelWork"><a href="#projects" class="btnWork">Preview (In Develop)</a></div>
+                                <div class="labelWork">
+                                    <a href="#projects" class="btnWork">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>   
             </div>
-        </div>
-        <div id="projects">
-            <h2>My projects<hr></h2>
-            <ul>
-                <li>ContApp</li>
-                <li>WebSite to Gym</li>
-                <li>Social Media (SpotiFriends)</li>
-            </ul>
         </div>
         <div id="contact">
             <h2>Contact<hr></h2>
-            
-            <ul>
-                <li>Linkedin</li>
-                <li>Email</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>WhatsApp</li>
-            </ul>
+            <div class="Information">
+                <div>Linkedin</div>
+                <div>Email</div>
+            </div>
         </div>
     </main>
     <footer>
@@ -108,6 +168,5 @@
             © 2024 Axel Enrique Garcia Vazquez
         </div>
     </footer>
-    
 </body>
 </html>

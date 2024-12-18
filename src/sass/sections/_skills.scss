@@ -1,4 +1,24 @@
 @use '../utils/variables' as var;
+@use '../utils/mixins';
+
+.skills h2{
+  font-size: 2rem;
+  margin-top: 1rem;
+
+  @include mixins.respond-to('card'){
+    text-align: center;
+  }
+
+  @include mixins.respond-to('small'){
+    font-size: 1.5rem;
+  }
+}
+
+.skills img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
 
 .cardContainer {
   display: grid;
@@ -6,24 +26,30 @@
   justify-content: center;
   align-items: center;
   justify-items: center;
-  width: auto;
+
+  @include mixins.respond-to('small'){
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
-
   background-color: var.$secondary-color;
-  padding: 1rem;
-  margin: 0 15px 30px;
+  padding: 5px;
   border-radius: 3rem;
+  margin: 0.5rem 0.5rem;
+  width: 18rem;
+  height: 8rem;
   color: #fff;
   text-align: center;
   font-family: var.$font-principal;
-  height: auto;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
-  border: 2px solid transparent;
-  background-clip: padding-box;
+  align-items: center;
+  justify-items: center;
+  -webkit-box-shadow: 10px 17px 42px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 17px 42px -3px rgba(0,0,0,0.75);
+  box-shadow: 10px 17px 42px -3px rgba(0,0,0,0.75);
 
   &:hover {
     transform: translateY(-10px);
@@ -52,41 +78,11 @@
 
 .card h3 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1rem;
   color: #fff;
-  min-height: 87px;
-  margin-bottom: 25px;
   position: relative;
   z-index: 2;
 }
-
-
-.card ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-}
-
-
-.card-bg {
-  height: 128px;
-  width: 128px;
-  background: linear-gradient(45deg, var.$decoration-color, var.$third-color, var.$text-color);
-  position: absolute;
-  top: -75px;
-  right: -75px;
-  border-radius: 50%;
-  z-index: 1;
-  transition: transform 0.5s ease;
-  opacity: 0.5;
-  filter: blur(10px);
-}
-
 
 .card:nth-child(2n) .card-bg {
   background: linear-gradient(45deg, var.$third-color, var.$secondary-color);
@@ -101,10 +97,6 @@
 }
 
 
-.skills img {
-  width: 50px;
-  margin-bottom: 1rem;
-}
 
 // Animación del gradiente
 @keyframes glowing {
@@ -117,4 +109,10 @@
   100% {
     background-position: 0 0;
   }
+}
+
+.imgCard{
+  align-items: center;
+  justify-items: center; 
+  object-fit: contain;
 }
