@@ -501,6 +501,21 @@ hr {
     background-position: 0 0;
   }
 }
+.centerButton {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.displayBtns {
+  display: flex;
+  white-space: nowrap;
+}
+
+.colorBtnBB {
+  background-color: #45A29E;
+}
+
 .labelWork {
   padding: 8px;
   border-radius: 6px;
@@ -533,4 +548,54 @@ hr {
 .labelWork a {
   text-decoration: none;
   color: #fff;
+}
+
+.bubble {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vh;
+  background-color: #45A29E;
+  border: 2px solid #45A29E;
+  border-radius: 1rem;
+  z-index: 1000;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 640px) {
+  .bubble {
+    width: auto;
+  }
+}
+
+.bubble::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1F2833;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+.textBubble {
+  text-align: start;
 }

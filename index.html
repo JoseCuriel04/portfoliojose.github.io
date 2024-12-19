@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Axel</title>
-    <link rel="stylesheet" href="../dist/css/main.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
     <!--ICON-->
-    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/images/icon.ico" type="image/x-icon">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!--SCRIPTS-->
-    <script src="./js/scrolled.js"></script>
+    <script src="./src/js/scrolled.js"></script>
+    <script src="./src/js/bubble.js"></script>
 </head>
 <body class="btnWork3">
     <header>
@@ -29,7 +30,7 @@
                 <h1 class="meTitle">Hello, My name is..</h1>
                 <div id="me" class="infoContent">
                     <div class="imageContent">
-                        <img src="./images/myPic.png" alt="" class="myPic"><br>
+                        <img src="./src/images/myPic.png" alt="" class="myPic"><br>
                         <div class="labelWork"><a class="btnWork">Available to Work</a></div>
                     </div>
                     
@@ -78,36 +79,36 @@
                     <div class="card btnWork2">
                         <h3>Programming languages</h3>
                         <div class="imgCard">
-                            <img src="./images/skills/js.webp" alt="">
-                            <img src="./images/skills/ts.webp" alt="">
-                            <img src="./images/skills/python.webp" alt="">
+                            <img src="./src/images/skills/js.webp" alt="">
+                            <img src="./src/images/skills/ts.webp" alt="">
+                            <img src="./src/images/skills/python.webp" alt="">
                         </div>
                     </div>
                     <div class="card">
                         <h3>Frameworks (Frontend & Backend)</h3>
                         <div class="imgCard">
-                            <img src="./images/skills/reactJS.webp" alt="">
-                            <img src="./images/skills/angular.webp" alt="">
-                            <img src="./images/skills/nodeJS.webp" alt="">
-                            <img src="./images/skills/nestJS.webp" alt="">
-                            <img src="./images/skills/expressJS.webp" alt="">    
+                            <img src="./src/images/skills/reactJS.webp" alt="">
+                            <img src="./src/images/skills/angular.webp" alt="">
+                            <img src="./src/images/skills/nodeJS.webp" alt="">
+                            <img src="./src/images/skills/nestJS.webp" alt="">
+                            <img src="./src/images/skills/expressJS.webp" alt="">    
                         </div>
                     </div>
                     <div class="card">
                         <h3>Databases/ORM</h3>
                         <div class="imgCard">
-                            <img src="./images/skills/mysql.webp" alt="">
-                            <img src="./images/skills/sqlserver.webp" alt="">
-                            <img src="./images/skills/postgresql.webp" alt="">
-                            <img src="./images/skills/prismaorm.webp" alt="">
+                            <img src="./src/images/skills/mysql.webp" alt="">
+                            <img src="./src/images/skills/sqlserver.webp" alt="">
+                            <img src="./src/images/skills/postgresql.webp" alt="">
+                            <img src="./src/images/skills/prismaorm.webp" alt="">
                         </div>
                     </div>
                     <div class="card">
                         <h3>CSS Frameworks and Preprocessors</h3>
                         <div class="imgCard">
-                            <img src="./images/skills/tailwind.webp" alt="">
-                            <img src="./images/skills/bootstrap.webp" alt="">
-                            <img src="./images/skills/sass.webp" alt="">
+                            <img src="./src/images/skills/tailwind.webp" alt="">
+                            <img src="./src/images/skills/bootstrap.webp" alt="">
+                            <img src="./src/images/skills/sass.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -123,7 +124,7 @@
             <div class="sectionProjs">
                 <div class="myProjs">
                     <div class="cardImg">
-                        <img src="./images/projects/ContApp.webp" alt="">
+                        <img src="./src/images/projects/ContApp.webp" alt="">
                     </div>
                     <div class="textProject">
                         <h3>ContApp (React, React native, Express, MySQL, PrismaORM)</h3>
@@ -148,7 +149,7 @@
                 </div>
                 <div class="myProjs">
                     <div class="cardImg">
-                        <img src="./images/projects/Spoti-Friends.webp" alt="">
+                        <img src="./src/images/projects/Spoti-Friends.webp" alt="">
                     </div>
                     <div class="textProject">
                         <h3>SpotiFriends (React, NestJS, MySQL, PrismaORM)</h3>
@@ -166,9 +167,9 @@
                             </p>
                             <div class="btnsContainer">
                                 <div class="labelWork">
-                                    <a href="#projects" class="btnWork">More Information</a>
+                                    <a href="#bubble" class="btnWork" id="bubbleBtnSpoti">More Information</a>
                                 </div>
-                                <div class="labelWork"><a href="#projects" class="btnWork">Preview (In Develop)</a></div>
+                                <div class="labelWork"><a href="#" class="btnWork">Preview (In Develop)</a></div>
                                 <div class="labelWork">
                                     <a href="#projects" class="btnWork">Code</a>
                                 </div>
@@ -177,6 +178,47 @@
                     </div>
                     
                 </div>   
+            </div>
+        </section>
+
+        <section class="bubble" id="bubbleSpoti">
+            <div class="bubbleSpoti">
+                <div class="titleContainer">Spoti-Friends</div>
+                <div class="centerButton">
+                    <div class="textBubble">
+                        <p>
+                            Spoti-Friends was created with React in FrontEnd and his 
+                            programming language is JavaScript.
+                        </p>
+                        <p>
+                            In Backend it was created with NestJS and his database was 
+                            manipulated through PrismaORM and the SQL was MySQL.
+                        </p>
+                        <p>
+                            The programming language in backend is TypeScript
+                        </p>
+                        <p>
+                            Spoti-Friends is a social media, where you can create your profile
+                            and when you have finished it, then you can view your profile and 
+                            in a notification icon you view matches with other people.
+                        </p>
+                        <p>
+                            These matches are relationated with your music tastes and artists too.
+                        </p>
+                        <p>
+                            If you click the notification, then you will be redirected to person's profile
+                        </p>
+                    </div>
+                    <div class="displayBtns">
+                        <div class="labelWork colorBtnBB">
+                            <a class="btnWork" id="closeBubble">Cerrar</a>
+                        </div>
+                        <div class="labelWork" id="goTo"><a href="" class="btnWork">Preview (In Develop)</a></div>
+                    </div>
+
+                </div>
+
+                
             </div>
         </section>
     </main>
