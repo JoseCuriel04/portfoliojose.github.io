@@ -8,10 +8,6 @@
   @include mixins.respond-to('card'){
     text-align: center;
   }
-
-  @include mixins.respond-to('small'){
-    font-size: 1.5rem;
-  }
 }
 
 .skills img {

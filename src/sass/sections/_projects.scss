@@ -11,7 +11,7 @@
     -moz-box-shadow: 10px 17px 42px -3px rgba(0,0,0,0.75);
     box-shadow: 10px 17px 42px -3px rgba(0,0,0,0.75);
     @include mixins.respond-to('small'){
-        width: 25vh;
+        width: 30vh;
     }
 }
 
@@ -20,7 +20,7 @@
     transform: scale(1.05);
     
     @include mixins.respond-to('small'){
-        width: 27vh;
+        width: 31vh;
     }
 }
 
@@ -42,15 +42,26 @@
 }
 
 .btnsContainer{
-    display: flex;
-    flex-direction: row;
     margin-right: 1vh;
+    object-fit: contain;
+    display: flex;
+    white-space: nowrap;
+    justify-items: center;
+    justify-content: center;
+    @include mixins.respond-to('small'){
+        flex-direction: column;
+        margin-right: 0;
+        display:block;
+        margin-bottom: 5px;
+        justify-items:stretch;
+    }
 }
 
 .btnsContainer a{
     text-decoration: none;
     object-fit: contain;
     color: #fff;
+    padding: 6px;    
 }
 
 .btnsContainer .labelWork{
