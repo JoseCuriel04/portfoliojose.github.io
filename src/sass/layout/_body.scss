@@ -17,31 +17,28 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  padding: 0 1rem; 
+  max-width: 80ch;
+  margin: 0 auto; 
+  box-sizing: border-box; 
 
-  
   @include mixins.respond-to('small') {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    max-width: 20ch;
   }
-  
+
   @include mixins.respond-to('medium') {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    max-width: 60ch; 
   }
 }
+
+
+
 
 h1{
   @include mixins.subtitles();
 }
-hr{
-  margin-top: 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
 
-/* Animación del fondo */
+
 @keyframes gradientBackground {
   0% {
     background-position: 0% 50%;

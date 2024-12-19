@@ -7,7 +7,7 @@ header{
     margin: 0 auto;
 }
 
-.nav{
+.nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,14 +20,21 @@ header{
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    padding: 10px; 
+    transition: background-color 1s ease, box-shadow 0.2s ease;
+    border-radius: 1rem;
+}
+
+.scrolled {
+    background-color: var.$secondary-color;
+    border-radius: 1rem;
+    -webkit-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.75);
 }
 
 .scrolled{
-    background-color: var.$secondary-color;
-    padding: 10px;
-    border-radius: 1rem;
-    position: fixed;
-    transition: background-color 1s ease;
+    box-shadow: none;
 }
 
 .navText{
