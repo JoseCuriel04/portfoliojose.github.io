@@ -511,9 +511,10 @@ hr {
   display: flex;
   white-space: nowrap;
 }
-
-.colorBtnBB {
-  background-color: #45A29E;
+@media (max-width: 640px) {
+  .displayBtns .labelWork {
+    width: auto;
+  }
 }
 
 .labelWork {
@@ -557,7 +558,7 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60vh;
-  background-color: #45A29E;
+  background-color: #1F2833;
   border: 2px solid #45A29E;
   border-radius: 1rem;
   z-index: 1000;
@@ -567,10 +568,26 @@ hr {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+.bubble::-webkit-scrollbar {
+  width: 3px;
+}
+.bubble::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+.bubble::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.bubble::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 @media (max-width: 640px) {
   .bubble {
-    width: auto;
+    width: 30vh;
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 

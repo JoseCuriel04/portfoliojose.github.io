@@ -53,8 +53,9 @@
   .displayBtns{
     display: flex;
     white-space: nowrap;
-  }
-
-  .colorBtnBB{
-    background-color: var.$decoration-color;
+    @include mixins.respond-to('small'){
+      .labelWork{
+        width: auto;
+    }
+    }
   }
