@@ -1,83 +1,166 @@
 window.addEventListener('load', () => {
-    createBubble();
-    closeBubble();
     createBubbleContapp();
     closeBubbleContapp();
     createBubbleMe();
     closeBubbleMe();
+    createBubbleMIAU();
+    closeBubbleMIAU();
+    createBubblePAWS();
+    closeBubblePAWS();
+    createBubbleHydrostop();
+    closeBubbleHydrostop();
+    createBubbleCrowpi();
+    closeBubbleCrowpi();
 });
 
-
-
-
-function createBubble(){
-    const bubbleSpoti = document.querySelector('#bubbleBtnSpoti');
-    bubbleSpoti.addEventListener('click', (e) => {
-        e.preventDefault();
-        const openBubble = document.querySelector('#bubbleSpoti');
-        openBubble.style.display = 'block';
-    });
-}
-
-function closeBubble() {
-   const closeBubbleBtn = document.querySelector('#closeBubbleSpoti');
-   closeBubbleBtn.addEventListener('click', () => {
-        const openBubble = document.querySelector('#bubbleSpoti');
-        openBubble.style.display = 'none'
-   }); 
-   
-   const closeBubbleBtn2 = document.querySelector('#goToSpoti');
-   closeBubbleBtn2.addEventListener('click', () => {
-    const openBubble = document.querySelector('#bubbleSpoti');
-    openBubble.style.display = 'none'
-})
-}
-
-function createBubbleContapp(){
-    const bubbleSpoti = document.querySelector('#bubbleBtnContapp');
-    bubbleSpoti.addEventListener('click', (e) => {
-        e.preventDefault();
-        const openBubble = document.querySelector('#bubbleContapp');
-        openBubble.style.display = 'block';
-    });
+function createBubbleContapp() {
+    const bubbleBtn = document.querySelector('#bubbleBtnContapp');
+    if (bubbleBtn) {
+        bubbleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const bubble = document.querySelector('#bubbleContapp');
+            if (bubble) bubble.style.display = 'block';
+        });
+    }
 }
 
 function closeBubbleContapp() {
-   const closeBubbleBtn = document.querySelector('#closeBubbleContapp');
-   closeBubbleBtn.addEventListener('click', () => {
-        const openBubble = document.querySelector('#bubbleContapp');
-        openBubble.style.display = 'none'
-   }); 
-   
-   const closeBubbleBtn2 = document.querySelector('#goTo');
-   closeBubbleBtn2.addEventListener('click', () => {
-    const openBubble = document.querySelector('#bubbleContapp');
-    openBubble.style.display = 'none'
-})
+    const closeBtn = document.querySelector('#closeBubbleContapp');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            const bubble = document.querySelector('#bubbleContapp');
+            if (bubble) bubble.style.display = 'none';
+        });
+    }
+
+    const goToBtn = document.querySelector('#goToSpoti');
+    if (goToBtn) {
+        goToBtn.addEventListener('click', () => {
+            const bubble = document.querySelector('#bubbleContapp');
+            if (bubble) bubble.style.display = 'none';
+        });
+    }
 }
 
-function createBubbleMe(){
-    const bubbleMe = document.querySelectorAll('.bubbleBtnMe');
-    bubbleMe.forEach((btnMe) => {
-        btnMe.addEventListener('click', (e) => {
-            e.preventDefault();
-            const openBubble = document.querySelector('#bubbleMe');
-            openBubble.style.display = 'block';
+function createBubbleMe() {
+    const bubbleBtns = document.querySelectorAll('.bubbleBtnMe');
+    if (bubbleBtns) {
+        bubbleBtns.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const bubble = document.querySelector('#bubbleMe');
+                if (bubble) bubble.style.display = 'block';
+            });
         });
-    });
-    
+    }
 }
 
 function closeBubbleMe() {
-   const closeBubbleBtn = document.querySelector('#closeBubbleMe');
-   closeBubbleBtn.addEventListener('click', () => {
-        const openBubble = document.querySelector('#bubbleMe');
-        openBubble.style.display = 'none'
-   }); 
-   
-   const closeBubbleBtn2 = document.querySelector('#goTo');
-   closeBubbleBtn2.addEventListener('click', () => {
-    const openBubble = document.querySelector('#bubbleMe');
-    openBubble.style.display = 'none'
-})
+    const closeBtn = document.querySelector('#closeBubbleMe');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            const bubble = document.querySelector('#bubbleMe');
+            if (bubble) bubble.style.display = 'none';
+        });
+    }
+}
+
+function createBubbleMIAU() {
+    const bubbleBtn = document.querySelector('#bubbleBtnMIAU');
+    if (bubbleBtn) {
+        bubbleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const bubble = document.querySelector('#bubbleMIAU');
+            if (bubble) bubble.style.display = 'block';
+        });
+    }
+}
+
+function closeBubbleMIAU() {
+    const closeBtn = document.querySelector('#closeBubbleMIAU');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            const bubble = document.querySelector('#bubbleMIAU');
+            if (bubble) bubble.style.display = 'none';
+        });
+    }
+
+    const goToBtn = document.querySelector('#goTo');
+    if (goToBtn) {
+        goToBtn.addEventListener('click', () => {
+            const bubble = document.querySelector('#bubbleMIAU');
+            if (bubble) bubble.style.display = 'none';
+        });
+    }
+}
+
+function createBubblePAWS() {
+    const bubbleBtn = document.querySelector('#bubbleBtnPAWS');
+    if (bubbleBtn) {
+        bubbleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const bubble = document.querySelector('#bubblePAWS');
+            if (bubble) bubble.style.display = 'block';
+        });
+    }
+}
+
+function closeBubblePAWS() {
+    const closeBtn = document.querySelector('#closeBubblePAWS');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            const bubble = document.querySelector('#bubblePAWS');
+            if (bubble) bubble.style.display = 'none';
+        });
+    }
+
+    const goToBtn = document.querySelector('#goTo');
+    if (goToBtn) {
+        goToBtn.addEventListener('click', () => {
+            const bubble = document.querySelector('#bubblePAWS');
+            if (bubble) bubble.style.display = 'none';
+        });
+    }
+}
+
+function createBubbleHydrostop() {
+    const bubbleBtn = document.querySelector('#bubbleBtnHydrostop');
+    if (bubbleBtn) {
+        bubbleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const bubble = document.querySelector('#bubbleHydrostop');
+            if (bubble) bubble.style.display = 'block';
+        });
+    }
+}
+
+function closeBubbleHydrostop() {
+    const closeBtn = document.querySelector('#closeBubbleHydrostop');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            const bubble = document.querySelector('#bubbleHydrostop');
+            if (bubble) bubble.style.display = 'none';
+        });
+    }
+}
+
+function createBubbleCrowpi() {
+    const bubbleBtn = document.querySelector('#bubbleBtnCrowpi');
+    if (bubbleBtn) {
+        bubbleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const bubble = document.querySelector('#bubbleCrowpi');
+            if (bubble) bubble.style.display = 'block';
+        });
+    }
+}
+
+function closeBubbleCrowpi() {
+    const closeBtn = document.querySelector('#closeBubbleCrowpi');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            const bubble = document.querySelector('#bubbleCrowpi');
+            if (bubble) bubble.style.display = 'none';
+        });
+    }
 }

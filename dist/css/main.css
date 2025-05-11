@@ -194,28 +194,19 @@
 
 .projects img {
   width: 45vh;
+  height: 22vh;
   border-radius: 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
   -webkit-box-shadow: 10px 17px 42px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 17px 42px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 17px 42px -3px rgba(0, 0, 0, 0.75);
+  object-fit: contain;
 }
+
 @media (max-width: 640px) {
   .projects img {
     width: 30vh;
   }
 }
-
-.projects img:hover {
-  width: 47vh;
-  transform: scale(1.05);
-}
-@media (max-width: 640px) {
-  .projects img:hover {
-    width: 31vh;
-  }
-}
-
 .myProjs {
   display: flex;
   flex-direction: row;

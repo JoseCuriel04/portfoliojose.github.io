@@ -11,9 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!--SCRIPTS-->
-    <script src="./src/js/scrolled.js"></script>
-    <script src="./src/js/bubble.js"></script>
+
 </head>
 <body class="btnWork3">
     <header>
@@ -82,16 +80,18 @@
                             <img src="./src/images/skills/js.webp" alt="">
                             <img src="./src/images/skills/ts.webp" alt="">
                             <img src="./src/images/skills/python.webp" alt="">
+                            <img src="./src/images/skills/java.webp">
                         </div>
                     </div>
                     <div class="card">
                         <h3>Frameworks (Frontend & Backend)</h3>
                         <div class="imgCard">
                             <img src="./src/images/skills/reactJS.webp" alt="">
-                            <img src="./src/images/skills/angular.webp" alt="">
                             <img src="./src/images/skills/nodeJS.webp" alt="">
                             <img src="./src/images/skills/nestJS.webp" alt="">
-                            <img src="./src/images/skills/expressJS.webp" alt="">    
+                            <img src="./src/images/skills/express-js.webp" alt="">
+                            <img src="./src/images/skills/django.webp">   
+                            <img src="./src/images/skills/flask.webp"> 
                         </div>
                     </div>
                     <div class="card">
@@ -149,76 +149,208 @@
                 </div>
                 <div class="myProjs">
                     <div class="cardImg">
-                        <img src="./src/images/projects/Spoti-Friends.webp" alt="">
+                        <img src="./src/images/projects/MIAU.webp" alt="M.I.A.U project image">
                     </div>
                     <div class="textProject">
-                        <h3>SpotiFriends (React, NestJS, MySQL, PrismaORM)</h3>
+                        <h3>M.I.A.U (Flutter, Django, Oracle Cloud)</h3>
                         <div>
+                            <p>This is a web/mobile app that allows you to find new pets for yourself or post lost pets.</p>
                             <p>
-                                This is a web application that requires you to sign in with your Spotify account.
-                            </p>
-                            
-                            <p>
-                                Once registered, you can create your profile and start connecting with others.
-                            </p>
-                            
-                            <p>
-                                The app matches you with people who share similar music tastes.
+                                This application includes many functions, e.g., you can generate a QR for your pet
+                                and then generate a PDF with the QR and important contact information.
+                                It's useful when you want to put a tag on your dog with important info in case it gets lost.
                             </p>
                             <div class="btnsContainer">
                                 <div class="labelWork">
-                                    <a href="" class="btnWork" id="bubbleBtnSpoti">More Information</a>
+                                    <a href="" class="btnWork" id="bubbleBtnMIAU">More Information</a>
                                 </div>
-                                <div class="labelWork"><a href="#" class="btnWork">Website (In Develop)</a></div>
+                                <div class="labelWork"><a href="#" class="btnWork">Website (In Development)</a></div>
                                 <div class="labelWork">
-                                    <a target="_blank" href="https://github.com/AxlEnr/Spoti-friends-Web" class="btnWork">Code</a>
+                                    <a target="_blank" href="https://github.com/YourGitHub/MIAU" class="btnWork">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="myProjs">
+                    <div class="cardImg">
+                        <img src="./src/images/projects/PAWS.webp" alt="P.A.W.S project image">
+                    </div>
+                    <div class="textProject">
+                        <h3>P.A.W.S (Java, Django)</h3>
+                        <div>
+                            <p>P.A.W.S is a mobile app where you connect with your family members and pets.</p>
+                            <p>
+                                It lets you create pet posts to share with your family and manage task reminders.
+                                For example, upload a photo to confirm a completed task and notify everyone.
+                            </p>
+                            <div class="btnsContainer">
+                                <div class="labelWork">
+                                    <a href="" class="btnWork" id="bubbleBtnPAWS">More Information</a>
+                                </div>
+                                <div class="labelWork"><a href="#" class="btnWork">Website (In Development)</a></div>
+                                <div class="labelWork">
+                                    <a target="_blank" href="https://github.com/YourGitHub/PAWS" class="btnWork">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="myProjs">
+                    <div class="cardImg">
+                      <img src="./src/images/projects/HYDRO.webp" alt="HydroStop Shower">
+                    </div>
+                    <div class="textProject">
+                        <h3>HydroStop Smart Shower (Java, Django, Oracle Cloud, ESP32)</h3>
+                        <p>It's a smart shower with a mobile app that allow you to manage 
+                            one or more showers with the app.
+                        </p>
+                        <p>
+                            It's useful for gyms or hotels where you need save water or resources.
+                        </p>
+                        <div class="btnsContainer">
+                            <div class="labelWork">
+                                <a class="btnWork" id="bubbleBtnHydrostop">More Information</button>
+                            </div>
+                        </div>
+                    </div>
                     
-                </div>   
+                </div>
+
+                <div class="myProjs" id="crowpiCard">
+                    <div class="cardImg">
+                        <img src="./src/images/projects/CROWPI.webp" alt="CrowPi Assistant">
+                    </div>
+                    <div class="textProject">
+                        <h3>CrowPi Assistant (Flask, OpenAI API, JavaScript)</h3>
+                        <div>
+                            <p>An intelligent assistant that helps you learn about CrowPi through voice commands, providing examples, explanations, and circuit demonstrations.</p>
+                            <div class="btnsContainer">
+                                <div class="labelWork">
+                                    <a href="" class="btnWork" id="bubbleBtnCrowpi">More Information</a>
+                                </div>
+                                <div class="labelWork">
+                                    <a target="_blank" href="https://github.com/YourGitHub/CrowPi-Assistant" class="btnWork">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="bubble" id="bubbleSpoti">
+        <section class="bubble" id="bubbleCrowpi">
             <div class="bubbleSpoti">
-                <div class="titleContainer">Spoti-Friends</div>
+                <div class="titleContainer">CrowPi Assistant</div>
                 <div class="centerButton">
                     <div class="textBubble">
-                        <p>
-                            Spoti-Friends was created with React in FrontEnd and his 
-                            programming language is JavaScript.
-                        </p>
-                        <p>
-                            In Backend it was created with NestJS and his database was 
-                            manipulated through PrismaORM and the SQL was MySQL.
-                        </p>
-                        <p>
-                            The programming language in backend is TypeScript
-                        </p>
-                        <p>
-                            Spoti-Friends is a social media, where you can create your profile
-                            and when you have finished it, then you can view your profile and 
-                            in a notification icon you view matches with other people.
-                        </p>
-                        <p>
-                            These matches are relationated with your music tastes and artists too.
-                        </p>
-                        <p>
-                            If you click the notification, then you will be redirected to person's profile
-                        </p>
+                        <p>CrowPi Assistant is an AI-powered learning companion designed specifically for the CrowPi educational computer kit.</p>
+                        <p>Key features:</p>
+                        <ul>
+                            <li>Voice command recognition</li>
+                            <li>Integration with OpenAI API for intelligent responses</li>
+                            <li>Context-aware help for CrowPi components and programming</li>
+                            <li>Real-time circuit visualization when running on CrowPi hardware</li>
+                            <li>Flask backend with JavaScript frontend for responsive UI</li>
+                            <li>Spanish is his principal language</li>
+                        </ul>
+                        <p>Example commands:</p>
+                        <ul>
+                            <li>"Show me how to blink an LED"</li>
+                            <li>"Explain GPIO pins"</li>
+                            <li>"Give me a Python example for the temperature sensor"</li>
+                        </ul>
                     </div>
                     <div class="displayBtns">
                         <div class="labelWork">
-                            <a class="btnWork" id="closeBubbleSpoti">Cerrar</a>
+                            <a class="btnWork" id="closeBubbleCrowpi">Close</a>
                         </div>
-                        <div class="labelWork" id="goTo"><a href="" class="btnWork">Website (In Develop)</a></div>
+                        <div class="labelWork">
+                            <a target="_blank" href="https://github.com/YourGitHub/CrowPi-Assistant" class="btnWork">View Code</a>
+                        </div>
                     </div>
-
                 </div>
+            </div>
+        </section>
 
-                
+        <section class="bubble" id="bubbleHydrostop">
+            <div class="bubbleSpoti">
+                <div class="titleContainer">HydroStop Smart Shower</div>
+                <div class="centerButton">
+                    <div class="textBubble">
+                        <p>HydroStop is an innovative smart shower system designed to help gyms and hotels conserve water while optimizing user experience.</p>
+                        <p>Key features:</p>
+                        <ul>
+                            <li>Real-time water usage monitoring with ESP32 microcontroller</li>
+                            <li>Automated shut-off after preset time volume</li>
+                            <li>Admin dashboard for facility management (built with Django)</li>
+                            <li>Oracle Cloud integration for data storage and analytics</li>
+                            <li>Mobile app for users to turn on/off the shower and see his showers per week</li>
+                        </ul>
+                    </div>
+                    <div class="displayBtns">
+                        <div class="labelWork">
+                            <a class="btnWork" id="closeBubbleHydrostop">Close</a>
+                        </div>
+                        <div class="labelWork">
+                            <a target="_blank" href="https://github.com/YourGitHub/HydroStop" class="btnWork">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bubble" id="bubbleMIAU">
+            <div class="bubbleSpoti">
+                <div class="titleContainer">M.I.A.U (Flutter, Django, Oracle Cloud)</div>
+                <div class="centerButton">
+                    <div class="textBubble">
+                        <p>M.I.A.U is a mobile and web app that helps you find pets to adopt or report lost animals.</p>
+                        <p>Key features include:</p>
+                        <ul>
+                            <li>Generate a QR code for your pet with your contact info, stored in a downloadable PDF.</li>
+                            <li>Useful for creating pet tags in case your pet gets lost.</li>
+                            <li>Post adoption or lost pet notices to the community.</li>
+                        </ul>
+                    </div>
+                    <div class="displayBtns">
+                        <div class="labelWork">
+                            <a class="btnWork" id="closeBubbleMIAU">Close</a>
+                        </div>
+                        <div class="labelWork" id="goTo">
+                            <a target="_blank" href="https://github.com/YourGitHub/MIAU" class="btnWork">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bubble" id="bubblePAWS">
+            <div class="bubbleSpoti">
+                <div class="titleContainer">P.A.W.S (Java, Django)</div>
+                <div class="centerButton">
+                    <div class="textBubble">
+                        <p>P.A.W.S is a mobile app where you connect with your family members and pets.</p>
+                        <p>Main features:</p>
+                        <ul>
+                            <li>Create posts of your pet to share with your family, like a photo album.</li>
+                            <li>
+                                Create reminders for yourself, a specific family member, or the whole family.
+                                The app sends a notification, and when it’s time to complete the task, a modal
+                                appears where you must upload a photo of the activity. Once submitted, a post is 
+                                created and shared with all family members.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="displayBtns">
+                        <div class="labelWork">
+                            <a class="btnWork" id="closeBubblePAWS">Close</a>
+                        </div>
+                        <div class="labelWork" id="goTo">
+                            <a target="_blank" href="https://github.com/YourGitHub/PAWS" class="btnWork">Code</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -300,5 +432,8 @@
             © 2024 Axel Enrique Garcia Vazquez
         </div>
     </footer>
+        <!--SCRIPTS-->
+    <script src="./src/js/scrolled.js"></script>
+    <script src="./src/js/bubble.js"></script>
 </body>
 </html>
