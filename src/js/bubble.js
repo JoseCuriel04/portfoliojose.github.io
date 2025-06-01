@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
 
 function createBubbleContapp() {
     const bubbleBtn = document.querySelector('#bubbleBtnContapp');
-    if (bubbleBtn) {
+    if (bubbleBtn) {    
         bubbleBtn.addEventListener('click', (e) => {
             e.preventDefault();
             const bubble = document.querySelector('#bubbleContapp');
@@ -53,7 +53,7 @@ function createBubbleMe() {
             });
         });
     }
-}
+}       
 
 function closeBubbleMe() {
     const closeBtn = document.querySelector('#closeBubbleMe');
@@ -61,7 +61,7 @@ function closeBubbleMe() {
         closeBtn.addEventListener('click', () => {
             const bubble = document.querySelector('#bubbleMe');
             if (bubble) bubble.style.display = 'none';
-        });
+        });     
     }
 }
 
