@@ -607,3 +607,7 @@ hr {
 .textBubble {
   text-align: start;
 }
+
+.imgCard {
+  object-fit: contain;
+}
