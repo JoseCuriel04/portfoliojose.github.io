@@ -139,9 +139,6 @@
                             <div class="btnsContainer">
                             <div class="labelWork">
                                 <a href="" class="btnWork" id="bubbleBtnContapp">More Information</a></div>
-                            <div class="labelWork">
-                                <a href="#projects" class="btnWork">Visualization</a>
-                            </div>
                             </div>                            
                         </div>
                     </div>
@@ -164,14 +161,14 @@
                                 <div class="labelWork">
                                     <a href="" class="btnWork" id="bubbleBtnMIAU">More Information</a>
                                 </div>
-                                <div class="labelWork"><a href="#" class="btnWork">Website (In Development)</a></div>
                                 <div class="labelWork">
-                                    <a target="_blank" href="https://github.com/YourGitHub/MIAU" class="btnWork">Code</a>
+                                    <a target="_blank" class="btnWork modalCodeMiau">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="myProjs">
                     <div class="cardImg">
                         <img src="./src/images/projects/PAWS.webp" alt="P.A.W.S project image">
@@ -190,12 +187,13 @@
                                 </div>
                                 <div class="labelWork"><a href="#" class="btnWork">Website (In Development)</a></div>
                                 <div class="labelWork">
-                                    <a target="_blank" href="https://github.com/YourGitHub/PAWS" class="btnWork">Code</a>
+                                    <a target="_blank" class="btnWork modalCodePaws">Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div> 
+
                 <div class="myProjs">
                     <div class="cardImg">
                       <img src="./src/images/projects/HYDRO.webp" alt="HydroStop Shower">
@@ -211,6 +209,9 @@
                         <div class="btnsContainer">
                             <div class="labelWork">
                                 <a class="btnWork" id="bubbleBtnHydrostop">More Information</button>
+                            </div>
+                            <div class="labelWork">
+                                <a target="_blank" class="btnWork modalCodeHs">Code</a>
                             </div>
                         </div>
                     </div>
@@ -230,7 +231,7 @@
                                     <a href="" class="btnWork" id="bubbleBtnCrowpi">More Information</a>
                                 </div>
                                 <div class="labelWork">
-                                    <a target="_blank" href="https://github.com/YourGitHub/CrowPi-Assistant" class="btnWork">Code</a>
+                                    <a target="_blank" class="btnWork" href="https://github.com/ArturoMD7/AI_Assistant_Crowpi">Code</a>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +319,7 @@
                             <a class="btnWork" id="closeBubbleMIAU">Close</a>
                         </div>
                         <div class="labelWork" id="goTo">
-                            <a target="_blank" href="https://github.com/YourGitHub/MIAU" class="btnWork">Code</a>
+                            <a target="_blank" class="btnWork">Code</a>
                         </div>
                     </div>
                 </div>
@@ -426,6 +427,61 @@
                 
             </div>
         </section> 
+        
+        <section class="bubble" id="MIAU">
+            <div class="bubbleSpoti">
+                <div class="centerButton">
+                    <div class="displayBtns">
+                        <div class="labelWork">
+                            <a target="_blank" class="btnWork" href="https://github.com/ArturoMD7/M.I.A.U_UI">Code (Frontend)</a>
+                        </div>
+                        <div class="labelWork">
+                            <a target="_blank" class="btnWork" href="https://github.com/AxlEnr/M.I.A.U-server" id="">Code (Backend)</a>
+                        </div>
+                        <div class="labelWork">
+                            <a target="_blank" class="btnWork closeBtn closeMIAU">Cerrar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section> 
+
+        <section class="bubble" id="PAWS">
+            <div class="bubbleSpoti">
+                <div class="centerButton">
+                    <div class="displayBtns">
+                        <div class="labelWork">
+                            <a target="_blank" class="btnWork" href="https://github.com/ArturoMD7/paws_front">Code (Frontend)</a>
+                        </div>
+                        <div class="labelWork">
+                            <a target="_blank" class="btnWork" href="https://github.com/AxlEnr/paws-server" id="">Code (Backend)</a>
+                        </div>
+                        <div class="labelWork">
+                            <a target="_blank" class="btnWork closeBtn closePAWS">Cerrar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section> 
+
+        <section class="bubble" id="HYDROSTOP">
+            <div class="bubbleSpoti">
+                <div class="centerButton">
+                    <div class="displayBtns">
+                        <div class="labelWork">
+                            <a target="_blank" class="btnWork" href="https://github.com/AxlEnr/hydrostop-movil">Code (Frontend)</a>
+                        </div>
+                        <div class="labelWork">
+                            <a target="_blank" class="btnWork" href="https://github.com/AxlEnr/hydrostop_backend" id="">Code (Backend)</a>
+                        </div>
+                        <div class="labelWork">
+                            <a target="_blank" class="btnWork closeBtn closeHYDROSTOP">Cerrar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section> 
+
     </main>
     <footer>
         <div class="copyright">
@@ -435,5 +491,6 @@
         <!--SCRIPTS-->
     <script src="./src/js/scrolled.js"></script>
     <script src="./src/js/bubble.js"></script>
+    <script src="./src/js/codeModals.js"></script>
 </body>
 </html>
