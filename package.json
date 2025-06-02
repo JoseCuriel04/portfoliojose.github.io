@@ -1,0 +1,26 @@
+{
+  "name": "portfolioaxel.github.io",
+  "version": "1.0.0",
+  "description": "This is my programming to my web site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxlEnr/portfolioaxel.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AxlEnr/portfolioaxel.github.io/issues"
+  },
+  "homepage": "https://github.com/AxlEnr/portfolioaxel.github.io#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.1"
+  }
+}
