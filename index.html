@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Curiel</title>
-    <link rel="stylesheet" href="./dist/css/main.css"> <!--ICON-->
-    <link rel="shortcut icon" href="./src/images/icon.ico" type="image/x-icon"> <!--FONTS-->
+    <title>Curiel Portfolio</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="shortcut icon" href="./src/images/icon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 </head>
+
 <body class="btnWork3">
     <header>
         <navbar class="nav" id="navID">
-            <div class="navText"><a href="" class="bubbleBtnMe">About Me</a></div>
-            <div class="navText"><a href="#projects">Projects</a></div>
-            <div class="navText"><a href="#skills">Skills</a></div>
-            <div class="navText"><a href="mailto:joselcl04@gmail.com">Contact</a></div>
+            <div class="navText"><a href="" class="bubbleBtnMe" data-translate="About Me">About Me</a></div>
+            <div class="navText"><a href="#projects" data-translate="Projects">Projects</a></div>
+            <div class="navText"><a href="#skills" data-translate="Skills">Skills</a></div>
+            <div class="navText"><a href="mailto:joselcl04@gmail.com" data-translate="Contact">Contact</a></div>
+            <div class="navText">
+                <a href="#" id="translateBtn"
+                    style="text-decoration: none; cursor: pointer; color: white; font-family: 'Poppins', sans-serif; font-weight: 500;">ES</a>
+            </div>
+
+
         </navbar>
     </header>
     <main>
         <section class="firstSection">
             <div class="meContent">
-                <h1 class="meTitle">Hello, My name is..</h1>
+                <h1 class="meTitle" data-translate="Hello, My name is..">Hello, My name is..</h1>
                 <div id="me" class="infoContent">
                     <div class="imageContent">
                         <img src="./src/images/myPic.jpg" alt="" class="myPic"><br>
-                        <div class="labelWork"><a class="btnWork">Available to Work</a></div>
+                        <div class="labelWork"><a class="btnWork" data-translate="Available to Work">Available to
+                                Work</a></div>
                     </div>
                     <div class="meText">
                         <p>
-                            <span class="name">Jose Luis Curiel López</span>, y soy estudiante de Ingeniería en Sistemas Computacionales en la UPT Tulancingo.
+                            <span class="name">Jose Luis Curiel López</span>, <span
+                                data-translate="I am a Computer Systems Engineering student at UPT Tulancingo.">I am a
+                                Computer Systems Engineering student at UPT Tulancingo.</span>
                         </p>
                         <p>
-                            Me apasiona la tecnología, el desarrollo de software y la automatización. Siempre estoy aprendiendo nuevas herramientas y lenguajes. Soy creador de <strong>EduSphere</strong>, una plataforma educativa para gestión escolar, y tengo experiencia en proyectos funcionales con diseño moderno.
+                            <span
+                                data-translate="I am passionate about technology, software development, and automation. I am always learning new tools and programming languages. I am the creator of">I
+                                am passionate about technology, software development, and automation. I am always
+                                learning new tools and programming languages. I am the creator of</span>
+                            <strong>EduSphere</strong>, <span
+                                data-translate="an educational platform for school management, and I have experience in functional projects with modern design.">an
+                                educational platform for school management, and I have experience in functional projects
+                                with modern design.</span>
                             <span class="moreMe bubbleBtnMe">
-                                <svg class="svgMe" fill="#fff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="svgMe" fill="#fff" viewBox="0 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
                                         <title>etc</title>
-                                        <path d="M5.5 16c0-1.5-1.25-2.75-2.75-2.75-1.531 0-2.75 1.25-2.75 2.75s1.219 2.75 2.75 2.75c1.5 0 2.75-1.25 2.75-2.75zM13.938 16c0-1.5-1.25-2.75-2.75-2.75s-2.75 1.25-2.75 2.75 1.25 2.75 2.75 2.75 2.75-1.25 2.75-2.75zM22.406 16c0-1.5-1.219-2.75-2.75-2.75-1.5 0-2.75 1.25-2.75 2.75s1.25 2.75 2.75 2.75c1.531 0 2.75-1.25 2.75-2.75z"></path>
+                                        <path
+                                            d="M5.5 16c0-1.5-1.25-2.75-2.75-2.75-1.531 0-2.75 1.25-2.75 2.75s1.219 2.75 2.75 2.75c1.5 0 2.75-1.25 2.75-2.75zM13.938 16c0-1.5-1.25-2.75-2.75-2.75s-2.75 1.25-2.75 2.75 1.25 2.75 2.75 2.75 2.75-1.25 2.75-2.75zM22.406 16c0-1.5-1.219-2.75-2.75-2.75-1.5 0-2.75 1.25-2.75 2.75s1.25 2.75 2.75 2.75c1.531 0 2.75-1.25 2.75-2.75z">
+                                        </path>
                                     </g>
                                 </svg>
                             </span>
@@ -51,15 +72,26 @@
                             <div class="urls">
                                 <div class="contactContainer">
                                     <div class="labelWork">
-                                        <a target="_blank" href="https://www.linkedin.com/in/jose-luis-curiel-lopez/" class="btnWork">
+                                        <a target="_blank"
+                                            href="https://www.linkedin.com/in/jose-luis-curiel-lopez-8b0932374"
+                                            class="btnWork">
                                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
                                                 <g id="SVGRepo_iconCarrier">
-                                                    <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#fff"></path>
-                                                    <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#fff"></path>
-                                                    <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#fff"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#fff"></path>
+                                                    <path
+                                                        d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                                        fill="#fff"></path>
+                                                    <path
+                                                        d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
+                                                        fill="#fff"></path>
+                                                    <path
+                                                        d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
+                                                        fill="#fff"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                                                        fill="#fff"></path>
                                                 </g>
                                             </svg>
                                             LinkedIn
@@ -69,9 +101,13 @@
                                         <a href="mailto:joselcl04@gmail.com" class="btnWork">
                                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
                                                 <g id="SVGRepo_iconCarrier">
-                                                    <path d="M4 7L10.94 11.3375C11.5885 11.7428 12.4115 11.7428 13.06 11.3375L20 7M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M4 7L10.94 11.3375C11.5885 11.7428 12.4115 11.7428 13.06 11.3375L20 7M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
+                                                        stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </g>
                                             </svg>
                                             Email
@@ -90,35 +126,40 @@
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
-                            <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z" fill="#fff"></path>
-                            <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z" fill="#fff"></path>
-                            <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z" fill="#fff"></path>
+                            <path
+                                d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
+                                fill="#fff"></path>
+                            <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
+                                fill="#fff"></path>
+                            <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
+                                fill="#fff"></path>
                         </g>
                     </svg>
-                    <h2>Skills</h2>
+                    <h2 data-translate="Skills">Skills</h2>
                 </div>
                 <div class="cardContainer">
                     <div class="card btnWork2">
-                        <h3>Lenguajes de Programación</h3>
+                        <h3 data-translate="Programming Languages">Programming Languages</h3>
                         <div class="imgCard">
-                            <img src="./src/images/skills/html.webp" alt="HTML">
-                            <img src="./src/images/skills/css.webp" alt="CSS">
+                            <img src="./src/images/skills/html.jpeg" alt="HTML">
+                            <img src="./src/images/skills/css.png" alt="CSS">
                             <img src="./src/images/skills/js.webp" alt="JavaScript">
-                            <img src="./src/images/skills/php.webp" alt="PHP">
+                            <img src="./src/images/skills/php.jpeg" alt="PHP">
                             <img src="./src/images/skills/python.webp" alt="Python">
                             <img src="./src/images/skills/java.webp" alt="Java">
-                            <img src="./src/images/skills/dart.webp" alt="Dart">
+                            <img src="./src/images/skills/dart.jpg" alt="Dart">
                         </div>
                     </div>
                     <div class="card">
-                        <h3>Frameworks y Herramientas</h3>
+                        <h3 data-translate="Frameworks and Tools">Frameworks and Tools</h3>
                         <div class="imgCard">
-                            <img src="./src/images/skills/flutter.webp" alt="Flutter">
+                            <img src="./src/images/skills/flutter.png" alt="Flutter">
                             <img src="./src/images/skills/django.webp" alt="Django">
-                            <img src="./src/images/skills/arduino.webp" alt="Arduino">
-                            <img src="./src/images/skills/git.webp" alt="Git">
+                            <img src="./src/images/skills/arduino.png" alt="Arduino">
+                            <img src="./src/images/skills/git.jpeg" alt="Git">
                             <img src="./src/images/skills/mysql.webp" alt="MySQL">
                             <img src="./src/images/skills/azure.webp" alt="Azure">
+                            <img src="./src/images/skills/bootstrap.webp" alt="Bootstrap">
                         </div>
                     </div>
                 </div>
@@ -130,93 +171,116 @@
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
-                        <path d="M2 9C2 7.89543 2.89543 7 4 7H20C21.1046 7 22 7.89543 22 9V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V9Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M16 7V4C16 2.89543 15.1046 2 14 2H10C8.89543 2 8 2.89543 8 4V7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M22 12L12.3922 13.9216C12.1333 13.9733 11.8667 13.9733 11.6078 13.9216L2 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                            d="M2 9C2 7.89543 2.89543 7 4 7H20C21.1046 7 22 7.89543 22 9V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V9Z"
+                            stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16 7V4C16 2.89543 15.1046 2 14 2H10C8.89543 2 8 2.89543 8 4V7" stroke="#fff"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22 12L12.3922 13.9216C12.1333 13.9733 11.8667 13.9733 11.6078 13.9216L2 12"
+                            stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </g>
                 </svg>
-                <h2>My projects</h2>
+                <h2 data-translate="My projects">My projects</h2>
             </div>
             <div class="sectionProjs">
                 <div class="myProjs">
                     <div class="cardImg">
-                        <img src="./src/images/projects/edusphere.webp" alt="EduSphere">
+                        <img src="./src/images/projects/edusphere.PNG" alt="EduSphere">
                     </div>
                     <div class="textProject">
                         <h3>EduSphere (HTML, CSS, JavaScript, PHP)</h3>
                         <div>
-                            <p>
-                                EduSphere es una plataforma educativa para la gestión escolar, diseñada para facilitar la administración de cursos, calificaciones y recursos educativos.
+                            <p
+                                data-translate="EduSphere is an educational platform for school management, designed to facilitate the administration of courses, grades, and educational resources.">
+                                EduSphere is an educational platform for school management, designed to facilitate the
+                                administration of courses, grades, and educational resources.
                             </p>
                             <div class="btnsContainer">
                                 <div class="labelWork">
-                                    <a href="https://github.com/JoseCuriel04/EduSphere" target="_blank" class="btnWork">Ver Código</a>
+                                    <a href="https://github.com/JoseCuriel04/EduSphere" target="_blank" class="btnWork"
+                                        data-translate="View Code">View Code</a>
                                 </div>
                                 <div class="labelWork">
-                                    <a href="#" class="btnWork" id="bubbleBtnEdusphere">Más Información</a>
+                                    <a href="#" class="btnWork" id="bubbleBtnEdusphere"
+                                        data-translate="More Information">More Information</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- SafeAlert -->
                 <div class="myProjs">
                     <div class="cardImg">
-                        <img src="./src/images/projects/safealert.webp" alt="SafeAlert">
+                        <img src="./src/images/projects/safealert.jpg" alt="SafeAlert">
                     </div>
                     <div class="textProject">
                         <h3>SafeAlert (Flutter, Django, Firebase)</h3>
                         <div>
-                            <p>
-                                SafeAlert es una aplicación móvil para reportar emergencias en tiempo real, con notificaciones a contactos de confianza y autoridades locales.
+                            <p
+                                data-translate="SafeAlert is a mobile application for reporting emergencies in real time, with notifications to trusted contacts and local authorities.">
+                                SafeAlert is a mobile application for reporting emergencies in real time, with
+                                notifications to trusted contacts and local authorities.
                             </p>
                             <div class="btnsContainer">
                                 <div class="labelWork">
-                                    <a href="https://github.com/JoseCuriel04/SafeAlert" target="_blank" class="btnWork">Ver Código</a>
+                                    <a href="https://github.com/JoseCuriel04/SafeAlert" target="_blank" class="btnWork"
+                                        data-translate="View Code">View Code</a>
                                 </div>
                                 <div class="labelWork">
-                                    <a href="#" class="btnWork" id="bubbleBtnSafealert">Más Información</a>
+                                    <a href="#" class="btnWork" id="bubbleBtnSafealert"
+                                        data-translate="More Information">More Information</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Sistema Penitenciario -->
                 <div class="myProjs">
                     <div class="cardImg">
-                        <img src="./src/images/projects/penitenciario.webp" alt="Sistema Penitenciario">
+                        <img src="./src/images/projects/sistemapeninteciario.png" alt="Penitentiary System">
                     </div>
                     <div class="textProject">
-                        <h3>Sistema Penitenciario (Java, MySQL)</h3>
+                        <h3>Penitentiary System (Java, MySQL)</h3>
                         <div>
-                            <p>
-                                Sistema para la gestión de información en centros penitenciarios, con módulos para registro de internos, visitas y reportes.
+                            <p
+                                data-translate="System for managing information in penitentiary centers, with modules for inmate registration, visits, and reports.">
+                                System for managing information in penitentiary centers, with modules for inmate
+                                registration, visits, and reports.
                             </p>
                             <div class="btnsContainer">
                                 <div class="labelWork">
-                                    <a href="https://github.com/JoseCuriel04/SistemaPenitenciario" target="_blank" class="btnWork">Ver Código</a>
+                                    <a href="https://github.com/JoseCuriel04/Penitenciario" target="_blank"
+                                        class="btnWork" data-translate="View Code">View Code</a>
                                 </div>
                                 <div class="labelWork">
-                                    <a href="#" class="btnWork" id="bubbleBtnPenitenciario">Más Información</a>
+                                    <a href="#" class="btnWork" id="bubbleBtnPenitenciario"
+                                        data-translate="More Information">More Information</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Moodle Custom -->
                 <div class="myProjs">
                     <div class="cardImg">
-                        <img src="./src/images/projects/moodle.webp" alt="Moodle Custom">
+                        <img src="./src/images/projects/moodle.png" alt="Moodle Custom">
                     </div>
                     <div class="textProject">
                         <h3>Moodle Custom (PHP, MySQL)</h3>
                         <div>
-                            <p>
-                                Personalización y extensión de la plataforma Moodle para adaptarla a necesidades específicas de una institución educativa.
+                            <p
+                                data-translate="Customization and extension of the Moodle platform to adapt it to the specific needs of an educational institution.">
+                                Customization and extension of the Moodle platform to adapt it to the specific needs of
+                                an educational institution.
                             </p>
                             <div class="btnsContainer">
                                 <div class="labelWork">
-                                    <a href="https://github.com/JoseCuriel04/MoodleCustom" target="_blank" class="btnWork">Ver Código</a>
+                                    <a href="http://200.79.182.105/moodle/" target="_blank"
+                                        class="btnWork" data-translate="View Code">View Code</a>
                                 </div>
                                 <div class="labelWork">
-                                    <a href="#" class="btnWork" id="bubbleBtnMoodle">Más Información</a>
+                                    <a href="#" class="btnWork" id="bubbleBtnMoodle"
+                                        data-translate="More Information">More Information</a>
                                 </div>
                             </div>
                         </div>
@@ -224,138 +288,166 @@
                 </div>
             </div>
         </section>
-
-        <!-- Secciones Bubble para cada proyecto -->
+        <!-- Bubble EduSphere -->
         <section class="bubble" id="bubbleEdusphere">
             <div class="bubbleSpoti">
-                <div class="titleContainer">EduSphere</div>
+                <div class="titleContainer" data-translate="EduSphere">EduSphere</div>
                 <div class="centerButton">
                     <div class="textBubble">
-                        <p>
-                            EduSphere es una plataforma educativa desarrollada para optimizar la gestión escolar. Permite a los profesores y administradores gestionar cursos, calificaciones y recursos de manera eficiente.
+                        <p
+                            data-translate="EduSphere is an educational platform developed to optimize school management. It allows teachers and administrators to efficiently manage courses, grades, and resources.">
+                            EduSphere is an educational platform developed to optimize school management. It allows
+                            teachers and administrators to efficiently manage courses, grades, and resources.
                         </p>
-                        <p>Características principales:</p>
+                        <p data-translate="Main Features:">Main Features:</p>
                         <ul>
-                            <li>Registro de estudiantes y profesores.</li>
-                            <li>Gestión de cursos y calificaciones.</li>
-                            <li>Interfaz intuitiva y responsive.</li>
-                            <li>Desarrollado con HTML, CSS, JavaScript y PHP.</li>
+                            <li data-translate="Student and teacher registration.">Student and teacher registration.
+                            </li>
+                            <li data-translate="Course and grade management.">Course and grade management.</li>
+                            <li data-translate="Intuitive and responsive interface.">Intuitive and responsive interface.
+                            </li>
+                            <li data-translate="Developed with HTML, CSS, JavaScript, and PHP.">Developed with HTML,
+                                CSS, JavaScript, and PHP.</li>
                         </ul>
                     </div>
                     <div class="displayBtns">
                         <div class="labelWork">
-                            <a class="btnWork" id="closeBubbleEdusphere">Cerrar</a>
+                            <a class="btnWork" id="closeBubbleEdusphere" data-translate="Close">Close</a>
                         </div>
                         <div class="labelWork">
-                            <a target="_blank" class="btnWork" href="https://github.com/JoseCuriel04/EduSphere">Ver Código</a>
+                            <a target="_blank" class="btnWork" href="https://github.com/JoseCuriel04/EduSphere"
+                                data-translate="View Code">View Code</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        <!-- Bubble SafeAlert -->
         <section class="bubble" id="bubbleSafealert">
             <div class="bubbleSpoti">
-                <div class="titleContainer">SafeAlert</div>
+                <div class="titleContainer" data-translate="SafeAlert">SafeAlert</div>
                 <div class="centerButton">
                     <div class="textBubble">
-                        <p>
-                            SafeAlert es una aplicación móvil que permite a los usuarios reportar emergencias con solo un botón, enviando su ubicación y detalles a contactos de emergencia y autoridades.
+                        <p
+                            data-translate="SafeAlert is a mobile application that allows users to report emergencies with just one button, sending their location and details to emergency contacts and authorities.">
+                            SafeAlert is a mobile application that allows users to report emergencies with just one
+                            button, sending their location and details to emergency contacts and authorities.
                         </p>
-                        <p>Características principales:</p>
+                        <p data-translate="Main Features:">Main Features:</p>
                         <ul>
-                            <li>Notificaciones en tiempo real.</li>
-                            <li>Integración con Firebase para autenticación y base de datos.</li>
-                            <li>Desarrollado con Flutter y Django.</li>
-                            <li>Interfaz amigable y fácil de usar.</li>
+                            <li data-translate="Real-time notifications.">Real-time notifications.</li>
+                            <li data-translate="Integration with Firebase for authentication and database.">Integration
+                                with Firebase for authentication and database.</li>
+                            <li data-translate="Developed with Flutter and Django.">Developed with Flutter and Django.
+                            </li>
+                            <li data-translate="User-friendly and easy-to-use interface.">User-friendly and easy-to-use
+                                interface.</li>
                         </ul>
                     </div>
                     <div class="displayBtns">
                         <div class="labelWork">
-                            <a class="btnWork" id="closeBubbleSafealert">Cerrar</a>
+                            <a class="btnWork" id="closeBubbleSafealert" data-translate="Close">Close</a>
                         </div>
                         <div class="labelWork">
-                            <a target="_blank" class="btnWork" href="https://github.com/JoseCuriel04/SafeAlert">Ver Código</a>
+                            <a target="_blank" class="btnWork" href="https://github.com/JoseCuriel04/SafeAlert"
+                                data-translate="View Code">View Code</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        <!-- Bubble Penitenciario -->
         <section class="bubble" id="bubblePenitenciario">
             <div class="bubbleSpoti">
-                <div class="titleContainer">Sistema Penitenciario</div>
+                <div class="titleContainer" data-translate="Penitentiary System">Penitentiary System</div>
                 <div class="centerButton">
                     <div class="textBubble">
-                        <p>
-                            Sistema diseñado para la gestión de información en centros penitenciarios, facilitando el registro de internos, visitas y generación de reportes.
+                        <p
+                            data-translate="System designed for managing information in penitentiary centers, facilitating inmate registration, visits, and report generation.">
+                            System designed for managing information in penitentiary centers, facilitating inmate
+                            registration, visits, and report generation.
                         </p>
-                        <p>Características principales:</p>
+                        <p data-translate="Main Features:">Main Features:</p>
                         <ul>
-                            <li>Registro y seguimiento de internos.</li>
-                            <li>Gestión de visitas y permisos.</li>
-                            <li>Generación de reportes estadísticos.</li>
-                            <li>Desarrollado con Java y MySQL.</li>
+                            <li data-translate="Inmate registration and tracking.">Inmate registration and tracking.
+                            </li>
+                            <li data-translate="Visit and permission management.">Visit and permission management.</li>
+                            <li data-translate="Statistical report generation.">Statistical report generation.</li>
+                            <li data-translate="Developed with Java and MySQL.">Developed with Java and MySQL.</li>
                         </ul>
                     </div>
                     <div class="displayBtns">
                         <div class="labelWork">
-                            <a class="btnWork" id="closeBubblePenitenciario">Cerrar</a>
+                            <a class="btnWork" id="closeBubblePenitenciario" data-translate="Close">Close</a>
                         </div>
                         <div class="labelWork">
-                            <a target="_blank" class="btnWork" href="https://github.com/JoseCuriel04/SistemaPenitenciario">Ver Código</a>
+                            <a target="_blank" class="btnWork"
+                                href="https://github.com/JoseCuriel04/SistemaPenitenciario"
+                                data-translate="View Code">View Code</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        <!-- Bubble Moodle -->
         <section class="bubble" id="bubbleMoodle">
             <div class="bubbleSpoti">
-                <div class="titleContainer">Moodle Custom</div>
+                <div class="titleContainer" data-translate="Moodle Custom">Moodle Custom</div>
                 <div class="centerButton">
                     <div class="textBubble">
-                        <p>
-                            Personalización de la plataforma Moodle para adaptarla a las necesidades de una institución educativa, añadiendo funcionalidades específicas.
+                        <p
+                            data-translate="Customization of the Moodle platform to adapt it to the needs of an educational institution, adding specific functionalities.">
+                            Customization of the Moodle platform to adapt it to the needs of an educational institution,
+                            adding specific functionalities.
                         </p>
-                        <p>Características principales:</p>
+                        <p data-translate="Main Features:">Main Features:</p>
                         <ul>
-                            <li>Integración de nuevos módulos.</li>
-                            <li>Adaptación de la interfaz de usuario.</li>
-                            <li>Optimización para gestión de cursos y usuarios.</li>
-                            <li>Desarrollado con PHP y MySQL.</li>
+                            <li data-translate="Integration of new modules.">Integration of new modules.</li>
+                            <li data-translate="User interface adaptation.">User interface adaptation.</li>
+                            <li data-translate="Optimization for course and user management.">Optimization for course
+                                and user management.</li>
+                            <li data-translate="Developed with PHP and MySQL.">Developed with PHP and MySQL.</li>
                         </ul>
                     </div>
                     <div class="displayBtns">
                         <div class="labelWork">
-                            <a class="btnWork" id="closeBubbleMoodle">Cerrar</a>
+                            <a class="btnWork" id="closeBubbleMoodle" data-translate="Close">Close</a>
                         </div>
                         <div class="labelWork">
-                            <a target="_blank" class="btnWork" href="https://github.com/JoseCuriel04/MoodleCustom">Ver Código</a>
+                            <a target="_blank" class="btnWork" href="https://github.com/JoseCuriel04/MoodleCustom"
+                                data-translate="View Code">View Code</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        <!-- Bubble About Me -->
         <section class="bubble" id="bubbleMe">
             <div class="bubbleSpoti">
-                <div class="titleContainer">About Me</div>
+                <div class="titleContainer" data-translate="About Me">About Me</div>
                 <div class="centerButton">
                     <div class="textBubble">
-                        <p>
-                            Soy José Luis Curiel López, estudiante de Ingeniería en Sistemas Computacionales en la UPT Tulancingo. Me apasiona el desarrollo de software, la creación de soluciones tecnológicas y el aprendizaje continuo.
+                        <p
+                            data-translate="I am José Luis Curiel López, a Computer Systems Engineering student at UPT Tulancingo. I am passionate about software development, creating technological solutions, and continuous learning.">
+                            I am José Luis Curiel López, a Computer Systems Engineering student at UPT Tulancingo. I am
+                            passionate about software development, creating technological solutions, and continuous
+                            learning.
                         </p>
-                        <p>
-                            Tengo experiencia en el desarrollo de aplicaciones web y móviles, así como en la implementación de sistemas de gestión. Mi objetivo es contribuir en proyectos innovadores y seguir creciendo profesionalmente en el ámbito tecnológico.
+                        <p
+                            data-translate="I have experience in web and mobile application development, as well as in the implementation of management systems. My goal is to contribute to innovative projects and continue growing professionally in the technological field.">
+                            I have experience in web and mobile application development, as well as in the
+                            implementation of management systems. My goal is to contribute to innovative projects and
+                            continue growing professionally in the technological field.
                         </p>
-                        <p>
-                            Actualmente busco oportunidades para aplicar mis conocimientos y habilidades en un entorno profesional, donde pueda aprender y colaborar en proyectos desafiantes.
+                        <p
+                            data-translate="I am currently looking for opportunities to apply my knowledge and skills in a professional environment, where I can learn and collaborate on challenging projects.">
+                            I am currently looking for opportunities to apply my knowledge and skills in a professional
+                            environment, where I can learn and collaborate on challenging projects.
                         </p>
                     </div>
                     <div class="displayBtns">
                         <div class="labelWork">
-                            <a class="btnWork" id="closeBubbleMe">Cerrar</a>
+                            <a class="btnWork" id="closeBubbleMe" data-translate="Close">Close</a>
                         </div>
                     </div>
                 </div>
@@ -371,5 +463,7 @@
     <script src="./src/js/scrolled.js"></script>
     <script src="./src/js/bubble.js"></script>
     <script src="./src/js/codeModals.js"></script>
+    <script src="./src/js/translate.js"></script>
 </body>
+
 </html>
